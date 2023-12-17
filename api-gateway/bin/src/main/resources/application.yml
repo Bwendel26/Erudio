@@ -5,13 +5,11 @@ spring:
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
-    open-in-view: false
     hibernate:
       ddl-auto: update
     properties:
       hibernate:
-      #properties:
-        #dialect: org.hibernate.dialect.MySQLDialect
+        dialect: org.hibernate.dialect.MySQL8Dialect
     show-sql: false
 
 app:
